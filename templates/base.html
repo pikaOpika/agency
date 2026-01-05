@@ -1,0 +1,51 @@
+{% load static %}
+<!doctype html>
+<html lang="uk">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{{ page_title|default:"Agency" }}</title>
+  <meta name="description" content="{{ meta_description|default:'' }}" />
+
+  <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+</head>
+<body>
+
+  <div class="topbar">
+    <div class="container topbar__inner">
+      <span class="topbar__item">Офіційний сайт</span>
+      <span class="topbar__sep">•</span>
+      <a class="topbar__link" href="#contacts">Контакти</a>
+    </div>
+  </div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="/">Агентські послуги</a>
+
+      <nav class="nav">
+        <a href="/">Головна</a>
+        <a href="/documents/">Документи</a>
+        <a href="#contacts">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container content">
+    {% block content %}{% endblock %}
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__note">
+        Послуги надаються в межах агентської діяльності.
+        Агент не здійснює фінансових, платіжних або банківських послуг та не здійснює обмін валют.
+        Усі операції проводяться на підставі договорів і підтверджуються первинними документами.
+      </p>
+      <p class="footer__copy">© {{ now|date:"Y" }} Агентські послуги</p>
+    </div>
+  </footer>
+
+</body>
+</html>

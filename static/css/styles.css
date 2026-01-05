@@ -1,0 +1,153 @@
+:root{
+  --brand:#0b3a66;
+  --brand-2:#114b84;
+  --text:#111827;
+  --muted:#4b5563;
+  --bg:#ffffff;
+  --bg-soft:#f5f7fa;
+  --line:#d9e1ea;
+  --radius:10px;
+}
+
+*{ box-sizing:border-box; }
+
+body{
+  margin:0;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  color:var(--text);
+  background:var(--bg);
+}
+
+.container{
+  width:min(1040px, 92vw);
+  margin:0 auto;
+}
+
+.topbar{
+  background:var(--bg-soft);
+  border-bottom:1px solid var(--line);
+  font-size:13px;
+  color:var(--muted);
+}
+.topbar__inner{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding:10px 0;
+}
+.topbar__link{
+  color:var(--muted);
+  text-decoration:none;
+}
+.topbar__link:hover{ color:var(--brand); }
+.topbar__sep{ opacity:.7; }
+
+.header{
+  background:#fff;
+  border-bottom:1px solid var(--line);
+}
+.header__inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:18px 0;
+}
+
+.brand{
+  font-weight:700;
+  text-decoration:none;
+  color:var(--brand);
+  letter-spacing:.2px;
+}
+
+.nav a{
+  margin-left:16px;
+  text-decoration:none;
+  color:var(--text);
+  font-size:14px;
+}
+.nav a:hover{
+  color:var(--brand-2);
+  text-decoration:underline;
+  text-underline-offset: 4px;
+}
+
+.content{
+  padding:22px 0 30px;
+}
+
+.h1{
+  font-size:30px;
+  line-height:1.2;
+  margin:0 0 12px;
+  color:var(--text);
+}
+.h2{
+  font-size:18px;
+  margin:0 0 12px;
+  color:var(--text);
+}
+
+.lead{
+  font-size:15px;
+  line-height:1.65;
+  margin:0 0 14px;
+  color:var(--text);
+}
+
+.muted{ color:var(--muted); }
+
+.section{
+  margin:18px 0;
+}
+
+.card{
+  background:#fff;
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:16px 18px;
+  margin:14px 0;
+}
+
+.checks, .docs{
+  margin:10px 0 0;
+  padding-left:18px;
+  color:var(--text);
+}
+.checks li, .docs li{ margin:8px 0; }
+
+.steps{
+  margin:8px 0 0;
+  padding-left:18px;
+}
+.steps li{ margin:8px 0; }
+
+.btn{
+  display:inline-block;
+  margin-top:12px;
+  padding:10px 14px;
+  border-radius:8px;
+  background:var(--brand);
+  color:#fff;
+  text-decoration:none;
+  font-weight:600;
+  font-size:14px;
+}
+.btn:hover{ background:var(--brand-2); }
+
+.footer{
+  background:var(--bg-soft);
+  border-top:1px solid var(--line);
+  padding:18px 0;
+}
+.footer__note{
+  margin:0;
+  color:var(--text);
+  line-height:1.6;
+  font-size:13px;
+}
+.footer__copy{
+  margin:10px 0 0;
+  color:var(--muted);
+  font-size:12px;
+}
