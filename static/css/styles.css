@@ -151,3 +151,7 @@ body{
   color:var(--muted);
   font-size:12px;
 }
+/* Микро-правки: делаем чуть “официальнее” */
+.navbar-brand { letter-spacing: .2px; }
+.btn-primary { background-color: #0b3a66; border-color: #0b3a66; }
+.btn-primary:hover { background-color: #114b84; border-color: #114b84; }
