@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+{% block content %}
+
+<section class="bg-white border rounded-3 p-4">
+  <div class="d-flex align-items-start justify-content-between flex-wrap gap-2 mb-3">
+    <div>
+      <h1 class="h5 mb-1">Контакти</h1>
+      <div class="text-secondary small">
+        Офіційні контактні дані та реквізити для зв’язку.
+      </div>
+    </div>
+
+    <span class="badge text-bg-light border text-secondary">
+      <i class="bi bi-info-circle me-1"></i> м. Одеса
+    </span>
+  </div>
+
+  <div class="row g-3">
+    <!-- Реквізити -->
+    <div class="col-lg-7">
+      <div class="border rounded-3 p-4 bg-light">
+        <h2 class="h6 text-uppercase text-secondary mb-3">Реквізити</h2>
+
+        <div class="mb-2 fw-semibold">Фізична особа – підприємець</div>
+        <div class="mb-1">Ілащук Євгеній Олександрович</div>
+        <div class="mb-3 text-secondary">ІПН: 3719408796</div>
+
+        <div class="small text-secondary mb-2">
+          <i class="bi bi-geo-alt me-2"></i>м. Одеса
+        </div>
+
+        <div class="small text-secondary mb-2">
+          <i class="bi bi-envelope me-2"></i>Email: <span class="text-dark">Yugin.haice@gmail.com</span>
+        </div>
+
+        <div class="small text-secondary">
+          <i class="bi bi-telephone me-2"></i>Telegram / телефон: <span class="text-dark">@yugin39</span>
+        </div>
+
+        <hr class="my-3">
+
+        <div class="small text-secondary">
+          Послуги надаються в межах агентської діяльності. Для отримання деталей — звертайтесь за контактами вище.
+        </div>
+      </div>
+    </div>
+
+    <!-- Быстрые действия -->
+    <div class="col-lg-5">
+      <div class="border rounded-3 p-4 bg-white">
+        <h2 class="h6 text-uppercase text-secondary mb-3">Швидкі дії</h2>
+
+        <div class="d-grid gap-2">
+          <!-- Подставишь реальные значения -->
+          <a class="btn btn-primary" href="mailto:Yugin.haice@gmail.com">
+            <i class="bi bi-envelope-paper me-1"></i> Написати на Email
+          </a>
+
+          <a class="btn btn-outline-primary" href="https://t.me/yugin39" target="_blank" rel="noopener">
+            <i class="bi bi-telegram me-1"></i> Написати в Telegram
+          </a>
+        </div>
+
+        <hr class="my-3">
+
+        <div class="small text-secondary">
+          Графік відповіді: у робочий час. За потреби підготуємо перелік документів для угоди.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock %}

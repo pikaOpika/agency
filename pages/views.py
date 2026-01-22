@@ -14,3 +14,13 @@ def documents(request):
         "meta_description": "Публічна оферта, політика конфіденційності, згода на обробку персональних даних.",
     }
     return render(request, "pages/documents.html", context)
+
+
+from django.shortcuts import render
+
+def contacts(request):
+    context = {
+        "page_title": "Контакти",
+        "meta_description": "Контактна інформація та реквізити ФОП.",
+    }
+    return render(request, "pages/contacts.html", context)
